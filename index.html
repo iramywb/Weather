@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg py-5" id="navy">
+        <div class="container">
+            <a class="navbar-brand text-white fw-bolder d-flex align-items-center justify-content-center" href="#">
+                <img src="img/logo.png" class="me-2" alt="">
+                <div class="logo-style">
+                    <h1 class="m-0">Weather</h1>
+                    <small>tagline goes here</small>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav navbar-custom ms-auto mb-2 mb-lg-0 gap-2">
+                    <li class="nav-item">
+                        <a class="nav-link active px-4 py-0" aria-current="page" href="#home">
+                            <div>Home</div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-4 py-0" href="#news">
+                            <div>News</div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-4 py-0" href="#live-cameras">
+                            <div>Live cameras</div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-4 py-0" href="#photos">
+                            <div>Photos</div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-4 py-0" href="#contact">
+                            <div>Contact</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="py-5">
+        <div class="container">
+            <div class="search-form position-relative">
+                <input type="text" class="input-style rounded-pill w-100" placeholder="Find your location..."
+                    id="search">
+                <input type="button" class="position-absolute input-style rounded-pill" id="submit" value="Find">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="forecasts opacity-0 rounded-2 overflow-hidden mb-5">
+                <div class="row g-0">
+                    <div class="today col-md-4">
+                        <div class="forecast-header px-3 py-2 d-flex align-items-center justify-content-between">
+                            <p class="day"></p>
+                            <p class="date"></p>
+                        </div>
+                        <div class="forecast-body text-center p-3">
+                            <img src="" class="d-block mx-auto" alt="">
+                            <div class="location fs-6"></div>
+                            <div class="degree display-3 fw-bold text-white"></div>
+                            <div class="description"></div>
+                            <span class="humidity">
+                                <img src="img/icon-umberella.png" alt="">
+                                <span class="description"></span>
+                            </span>
+                            <span class="wind">
+                                <img src="img/icon-wind.png" alt="">
+                                <span class="description"></span>
+                            </span>
+                            <span class="direction">
+                                <img src="img/icon-compass.png" alt="">
+                                <span class="description"></span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="tmr col-md-4">
+                        <div class="forecast-header px-3 py-2 d-flex align-items-center justify-content-center">
+                            <p class="day"></p>
+                        </div>
+                        <div class="forecast-body text-center p-3">
+                            <img src="" class="d-block mx-auto" alt="">
+                            <div class="degree fs-4 fw-bold text-white"></div>
+                            <small class="d-block fs-6"></small>
+                            <div class="description"></div>
+                        </div>
+                    </div>
+                    <div class="afterTmr text-center col-md-4">
+                        <div class="forecast-header px-3 py-2 d-flex align-items-center justify-content-center">
+                            <p class="day"></p>
+                        </div>
+                        <div class="forecast-body p-3">
+                            <img src="" class="d-block mx-auto" alt="">
+                            <div class="degree fs-4 fw-bold text-white"></div>
+                            <small class="d-block fs-6"></small>
+                            <div class="description"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="py-5">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-md-8">
+                    <form class="subscribe-form position-relative">
+                        <input type="text" class="input-style rounded-pill w-100"
+                            placeholder="Enter your email to subscribe..." id="search">
+                        <input type="button" class="position-absolute input-style rounded-pill" value="Subscribe">
+                    </form>
+                </div>
+                <div class="col-md-3 offset-md-1">
+                    <ul class="social list-unstyled fs-5">
+                        <li><a href="#" class="rounded-circle"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#" class="rounded-circle"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#" class="rounded-circle"><i class="fa-brands fa-google-plus-g"></i></a></li>
+                        <li><a href="#" class="rounded-circle"><i class="fa-brands fa-pinterest"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="text-center d-block mt-3">Copyright 2014 Company name. Designed by Themezy. All rights
+                reserved</p>
+        </div>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

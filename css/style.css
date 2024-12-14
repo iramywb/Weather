@@ -1,0 +1,151 @@
+img {
+    width: 100%;
+}
+
+body {
+    background-color: #1e202b;
+    color: #bfc1c8;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* Navbar */
+.navbar-custom .nav-item .nav-link {
+    color: white;
+    border: transparent solid 2px;
+    border-radius: 50px;
+}
+
+.navbar-custom .nav-item .nav-link.active,
+.navbar-custom .nav-item .nav-link:hover {
+    color: #009ad8;
+    border-color: #009ad8;
+}
+
+.logo-style {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.logo-style img {
+    width: 40%;
+}
+
+.logo-style h1 {
+    font-size: 1.1428571429em;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.logo-style small {
+    color: #bfc1c8;
+    font-size: 8px;
+}
+
+/* Header */
+header {
+    background-image: url(../img/banner.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 350px;
+}
+
+.input-style {
+    color: white;
+    background-color: #1e202b;
+    outline: none;
+    border: none;
+}
+
+.input-style[type="text"] {
+    padding: 1rem;
+}
+
+/* get input style that has type of button and make padding */
+.input-style[type="button"] {
+    padding-inline: 2.3rem;
+    right: 5px;
+    top: 5px;
+    bottom: 5px;
+    text-align: center;
+    align-content: center;
+    background-color: #009ad8;
+}
+
+/* main */
+main {
+    margin-top: -70px;
+}
+
+.forecasts {
+    background-color: #323544;
+}
+
+.forecast-header {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.forecast-header p {
+    margin-bottom: 0;
+}
+
+
+.weather .description {
+    font-size: 12px;
+}
+
+.humidity img,
+.wind img,
+.direction img {
+    width: 21px;
+}
+
+.forecast-body>img {
+    width: 48px;
+}
+
+.today .forecast-body>img {
+    width: 64px;
+}
+
+.forecast-body>.description {
+    color: #009ad8;
+    margin-block: 20px;
+}
+
+.tmr {
+    background-color: #262936;
+}
+
+/* footer */
+footer {
+    background-color: #262936;
+}
+
+.social {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 4px;
+}
+
+.social li a {
+    --size: 40px;
+    display: block;
+    text-align: center;
+    align-content: center;
+    width: var(--size);
+    height: var(--size);
+    background-color: #1e202b;
+    color: #009ad8;
+    transition: all 0.3s ease-in-out;
+}
+
+.social li a:hover {
+    background-color: #009ad8;
+    color: white;
+}
